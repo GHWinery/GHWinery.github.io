@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><toc xmlns="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+   <title><span xmlns="http://www.w3.org/1999/xhtml" class="title">Delivery</span></title>
+   <topic href="delivery_0.html" data-id="delivery_0">
+      <title>Wine and Store Supply Orders</title>
+      <topicmeta></topicmeta>
+      <topic href="untitled5.html" data-id="untitled5">
+         <title>Ordering Supplies for the Winery</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta></topicmeta>
+      </topic>
+      <topic href="untitled6.html" data-id="untitled6">
+         <title>Creating Inventory Orders from the Winery Supply Order Form</title>
+         <topicmeta></topicmeta>
+      </topic>
+      <topic href="untitled7.html" data-id="untitled7">
+         <title>Fulfiling Supply Orders to Store Locations</title>
+         <topicmeta></topicmeta>
+      </topic>
+      <topic href="untitled8.html" data-id="untitled8">
+         <title>Fulfiling Wine Orders for Store Locations</title>
+         <topicmeta></topicmeta>
+      </topic>
+      <topic href="untitled9.html" data-id="untitled9">
+         <title>Receiving Orders at Stores</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta></topicmeta>
+      </topic>
+   </topic>
+</toc>

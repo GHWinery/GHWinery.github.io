@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winery Documents</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: #8e44ad;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .file-tree {
+            list-style: none;
+        }
+
+        .file-tree li {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+
+        .file-tree li:hover {
+            background: #f8f9fa;
+        }
+
+        .file-tree li:last-child {
+            border-bottom: none;
+        }
+
+        .file-link {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .file-icon {
+            font-size: 20px;
+        }
+
+        .file-name {
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .file-description {
+            color: #666;
+            font-size: 13px;
+            margin-top: 4px;
+        }
+
+        .file-meta {
+            color: #999;
+            font-size: 12px;
+        }
+
+        .folder {
+            margin-top: 30px;
+        }
+
+        .folder-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #8e44ad;
+            margin-bottom: 15px;
+            padding-left: 5px;
+            border-left: 4px solid #8e44ad;
+            padding-left: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 12px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍷 Winery Documents</h1>
+            <p>Standard Operating Procedures & Resources</p>
+        </header>
+
+        <div class="content">
+            <!-- Main Documents -->
+            <div class="folder">
+                <h2 class="folder-title">📄 Procedures</h2>
+                <ul class="file-tree">
+                    <li>
+                        <a href="Winery-Supply-Order-Delivery-SOP.html" class="file-link">
+                            <span class="file-icon">📋</span>
+                            <div style="flex: 1;">
+                                <div class="file-name">Winery Supply Order & Delivery SOP</div>
+                                <div class="file-description">Complete standard operating procedure for ordering and delivery</div>
+                            </div>
+                            <span class="file-meta">HTML</span>
+                        </a>
+                    </li>
+                    <!-- Add more files here as needed -->
+                </ul>
+            </div>
+
+            <!-- Additional sections can be added -->
+            <!-- 
+            <div class="folder">
+                <h2 class="folder-title">📊 Reports</h2>
+                <ul class="file-tree">
+                    <li>
+                        <a href="your-file.html" class="file-link">
+                            <span class="file-icon">📊</span>
+                            <div style="flex: 1;">
+                                <div class="file-name">Your File Name</div>
+                                <div class="file-description">Description here</div>
+                            </div>
+                            <span class="file-meta">HTML</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            -->
+        </div>
+
+        <footer>
+            &copy; 2026 Greenhouse Winery | Last updated: January 2026
+        </footer>
+    </div>
+</body>
+</html>

@@ -11,7 +11,7 @@
 
 ## Manual Structure
 
-This manual is organized into the following sections:
+This manual is organized into the following sections: 
 
 ### 🌱 Vineyard Operations
 Information about grape varieties, harvest planning, and vineyard quality control.

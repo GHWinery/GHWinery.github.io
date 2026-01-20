@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
+   <appContext helpID="welcome" path="welcome.html"/>
+   <appContext helpID="untitled10" path="untitled10.html"/>
+   <appContext helpID="opening_the_winery" path="opening_the_winery.html"/>
+   <appContext helpID="opening_the_square_pos_and_cash_register"
+               path="opening_the_square_pos_and_cash_register.html"/>
    <appContext helpID="delivery_0" path="delivery_0.html"/>
    <appContext helpID="untitled5" path="untitled5.html"/>
    <appContext helpID="untitled6" path="untitled6.html"/>

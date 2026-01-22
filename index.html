@@ -114,6 +114,15 @@
             font-size: 12px;
             border-top: 1px solid #eee;
         }
+
+        /* Highlight for new/featured items */
+        .featured {
+            background: #f0e6f6;
+        }
+
+        .featured:hover {
+            background: #e8daf3;
+        }
     </style>
 </head>
 <body>
@@ -124,11 +133,27 @@
         </header>
 
         <div class="content">
+            <!-- Wine Inventory Manager -->
+            <div class="folder">
+                <h2 class="folder-title">📊 Inventory Management</h2>
+                <ul class="file-tree">
+                    <li class="featured">
+                        <a href="/wine-inventory/" class="file-link">
+                            <span class="file-icon">🍇</span>
+                            <div style="flex: 1;">
+                                <div class="file-name">Wine Inventory Manager</div>
+                                <div class="file-description">Track wine stock status, manage inventory, and update availability in real-time</div>
+                            </div>
+                            <span class="file-meta">WEB APP</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
             <!-- Main Documents -->
             <div class="folder">
                 <h2 class="folder-title">📄 Procedures</h2>
                 <ul class="file-tree">
-                    <!-- Add more files here as needed -->
                     <li>
                         <a href="Supply Ordering and Delivery Process.pdf" class="file-link">
                             <span class="file-icon">📋</span>

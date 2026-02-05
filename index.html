@@ -3,211 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winery Documents</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-            background: #f5f5f5;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-
-        header {
-            background: #8e44ad;
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            opacity: 0.9;
-            font-size: 14px;
-        }
-
-        .content {
-            padding: 30px;
-        }
-
-        .file-tree {
-            list-style: none;
-        }
-
-        .file-tree li {
-            padding: 12px 15px;
-            border-bottom: 1px solid #eee;
-            transition: background 0.2s;
-        }
-
-        .file-tree li:hover {
-            background: #f8f9fa;
-        }
-
-        .file-tree li:last-child {
-            border-bottom: none;
-        }
-
-        .file-link {
-            text-decoration: none;
-            color: #333;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .file-icon {
-            font-size: 20px;
-        }
-
-        .file-name {
-            font-weight: 500;
-            flex: 1;
-        }
-
-        .file-description {
-            color: #666;
-            font-size: 13px;
-            margin-top: 4px;
-        }
-
-        .file-meta {
-            color: #999;
-            font-size: 12px;
-        }
-
-        .folder {
-            margin-top: 30px;
-        }
-
-        .folder-title {
-            font-size: 18px;
-            font-weight: 600;
-            color: #8e44ad;
-            margin-bottom: 15px;
-            padding-left: 5px;
-            border-left: 4px solid #8e44ad;
-            padding-left: 15px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #999;
-            font-size: 12px;
-            border-top: 1px solid #eee;
-        }
-
-        /* Highlight for new/featured items */
-        .featured {
-            background: #f0e6f6;
-        }
-
-        .featured:hover {
-            background: #e8daf3;
-        }
-    </style>
+    <title>Greenhouse Winery - Procedures & Training</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🍷 Winery Documents</h1>
-            <p>Standard Operating Procedures & Resources</p>
-        </header>
+    <header>
+        <div class="container">
+            <h1>🍷 Greenhouse Winery</h1>
+            <p class="subtitle">Standard Operating Procedures & Training Materials</p>
+        </div>
+    </header>
 
-        <div class="content">
-            <!-- Inventory Management -->
-            <div class="folder">
-                <h2 class="folder-title">📊 Inventory Management</h2>
-                <ul class="file-tree">
-                    <li class="featured">
-                        <a href="https://docs.google.com/spreadsheets/d/1vClQyCN_5F3zaz-ccEoxZzFIL7VQrUt8qwhLIs4IZIM/edit?usp=sharing" class="file-link" target="_blank">
-                            <span class="file-icon">🍇</span>
-                            <div style="flex: 1;">
-                                <div class="file-name">Wine Stock and Upcoming Releases</div>
-                                <div class="file-description">Track wine stock status and manage upcoming releases</div>
-                            </div>
-                            <span class="file-meta">GOOGLE SHEETS</span>
+    <main class="container">
+        <section class="intro">
+            <p>Welcome to the Greenhouse Winery procedures portal. Select a category below to access standard operating procedures and training documentation.</p>
+        </section>
+
+        <div class="categories">
+            <!-- Festivals -->
+            <div class="category-card">
+                <div class="category-header">
+                    <span class="icon">🎪</span>
+                    <h2>Festivals</h2>
+                </div>
+                <p class="category-desc">Wine festival operations, permits, and event procedures</p>
+                <ul class="procedure-list">
+                    <li>
+                        <a href="procedures/Festivals/001 - Acquiring a PLCB Exposition Permit.docx" download>
+                            <span class="doc-number">FES-001</span>
+                            <span class="doc-title">Acquiring PLCB Exposition Permit</span>
                         </a>
                     </li>
-                    <li class="featured">
-                        <a href="https://docs.google.com/spreadsheets/d/1piGWWz3WlQQzTZwQ_VqqOYUZs4MaXHzIyt7C8UWzWbc/edit?usp=sharing" class="file-link" target="_blank">
-                            <span class="file-icon">📦</span>
-                            <div style="flex: 1;">
-                                <div class="file-name">GH Winery Supply Order Form</div>
-                                <div class="file-description">Order supplies and manage inventory requests</div>
-                            </div>
-                            <span class="file-meta">GOOGLE SHEETS</span>
+                    <li>
+                        <a href="procedures/Festivals/Wine Festival Operations Overview.docx" download>
+                            <span class="doc-number">FES-002</span>
+                            <span class="doc-title">Wine Festival Operations Overview</span>
                         </a>
                     </li>
                 </ul>
             </div>
 
-            <!-- Main Documents -->
-            <div class="folder">
-                <h2 class="folder-title">📄 Procedures</h2>
-                <ul class="file-tree">
+            <!-- Store Procedures -->
+            <div class="category-card">
+                <div class="category-header">
+                    <span class="icon">🏪</span>
+                    <h2>Store Procedures</h2>
+                </div>
+                <p class="category-desc">Daily operations for opening, closing, and maintenance</p>
+                <ul class="procedure-list">
                     <li>
-                        <a href="Supply Ordering and Delivery Process.pdf" class="file-link">
-                            <span class="file-icon">📋</span>
-                            <div style="flex: 1;">
-                                <div class="file-name">Winery Supply Order & Delivery SOP</div>
-                                <div class="file-description">Complete standard operating procedure for ordering and delivery</div>
-                            </div>
-                            <span class="file-meta">PDF</span>
+                        <a href="procedures/Store Procedures/Cleaning the Slushie Machine at Westmoreland and Jacktown.docx" download>
+                            <span class="doc-number">STO-001</span>
+                            <span class="doc-title">Cleaning Slushie Machine (Westmoreland & Jacktown)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="procedures/Store Procedures/Cleaning the Slushie Machine at the Main Winery.docx" download>
+                            <span class="doc-number">STO-002</span>
+                            <span class="doc-title">Cleaning Slushie Machine (Main Winery)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="procedures/Store Procedures/Closing the Main Winery.docx" download>
+                            <span class="doc-number">STO-003</span>
+                            <span class="doc-title">Closing the Main Winery</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="procedures/Store Procedures/Opening the Main Winery.docx" download>
+                            <span class="doc-number">STO-004</span>
+                            <span class="doc-title">Opening the Main Winery</span>
                         </a>
                     </li>
                 </ul>
             </div>
 
-            <!-- Slushie Machine Section -->
-            <div class="folder">
-                <h2 class="folder-title">🧊 Slushie Machine Operation and Maintenance</h2>
-                <ul class="file-tree">
+            <!-- Supplies and Ordering -->
+            <div class="category-card">
+                <div class="category-header">
+                    <span class="icon">📦</span>
+                    <h2>Supplies & Ordering</h2>
+                </div>
+                <p class="category-desc">Inventory management and ordering procedures</p>
+                <ul class="procedure-list">
                     <li>
-                        <a href="Slushie_Machine_Cleaning_Main.pdf" class="file-link">
-                            <span class="file-icon">📋</span>
-                            <div style="flex: 1;">
-                                <div class="file-name">Slushie Machine Cleaning Procedure - Main Winery</div>
-                                <div class="file-description">Cleaning and maintenance procedures for main winery location</div>
-                            </div>
-                            <span class="file-meta">PDF</span>
+                        <a href="procedures/Supplies and Ordering/Ordering Supplies and Wine for the Stores.docx" download>
+                            <span class="doc-number">SUP-001</span>
+                            <span class="doc-title">Ordering Supplies and Wine for the Stores</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Training -->
+            <div class="category-card">
+                <div class="category-header">
+                    <span class="icon">📚</span>
+                    <h2>Training</h2>
+                </div>
+                <p class="category-desc">Employee training materials and guidelines</p>
+                <ul class="procedure-list">
+                    <li>
+                        <a href="procedures/Training/Employee Training - Sampling and Our Wines.docx" download>
+                            <span class="doc-number">TRA-001</span>
+                            <span class="doc-title">Employee Training - Sampling and Our Wines</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Website and Social Media -->
+            <div class="category-card">
+                <div class="category-header">
+                    <span class="icon">📱</span>
+                    <h2>Website & Social Media</h2>
+                </div>
+                <p class="category-desc">Marketing and digital presence procedures</p>
+                <ul class="procedure-list">
+                    <li>
+                        <a href="procedures/Website and Social Media/Creating an Event on Facebook.docx" download>
+                            <span class="doc-number">MAR-001</span>
+                            <span class="doc-title">Creating an Event on Facebook</span>
                         </a>
                     </li>
                     <li>
-                        <a href="Slushie_Machine_Cleaning_WMJT.pdf" class="file-link">
-                            <span class="file-icon">📋</span>
-                            <div style="flex: 1;">
-                                <div class="file-name">Slushie Machine Cleaning Procedure - Westmoreland and Jacktown</div>
-                                <div class="file-description">Cleaning and maintenance procedures for Westmoreland and Jacktown locations</div>
-                            </div>
-                            <span class="file-meta">PDF</span>
+                        <a href="procedures/Website and Social Media/Creating an Event on the Wix Website.docx" download>
+                            <span class="doc-number">MAR-002</span>
+                            <span class="doc-title">Creating an Event on the Wix Website</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Wholesale -->
+            <div class="category-card">
+                <div class="category-header">
+                    <span class="icon">🚚</span>
+                    <h2>Wholesale</h2>
+                </div>
+                <p class="category-desc">Wholesale operations and pricing</p>
+                <ul class="procedure-list">
+                    <li>
+                        <a href="procedures/Wholesale/Greenhouse Wholesale Process.docx" download>
+                            <span class="doc-number">WHO-001</span>
+                            <span class="doc-title">Greenhouse Wholesale Process</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="procedures/Wholesale/Greenhouse Winery Wholesale Price List.docx" download>
+                            <span class="doc-number">WHO-002</span>
+                            <span class="doc-title">Wholesale Price List</span>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
+    </main>
 
-        <footer>
-            &copy; 2026 Greenhouse Winery | Last updated: January 2026
-        </footer>
-    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Greenhouse Winery. All procedures are proprietary and confidential.</p>
+            <p class="last-updated">Last Updated: February 5, 2026</p>
+        </div>
+    </footer>
 </body>
 </html>

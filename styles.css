@@ -80,48 +80,83 @@ main {
 .category-card {
     background: white;
     border-radius: 8px;
-    padding: 1.5rem;
+    overflow: hidden;
     box-shadow: var(--shadow);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: box-shadow 0.2s;
 }
 
 .category-card:hover {
-    transform: translateY(-4px);
     box-shadow: var(--shadow-hover);
 }
 
-.category-header {
+.category-toggle {
+    width: 100%;
+    background: white;
+    border: none;
+    padding: 1.5rem;
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.2s;
     border-bottom: 2px solid var(--border-color);
 }
 
-.category-header .icon {
-    font-size: 2.5rem;
+.category-toggle:hover {
+    background-color: var(--bg-light);
 }
 
-.category-header h2 {
+.category-toggle .icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.category-info {
+    flex: 1;
+}
+
+.category-info h2 {
     font-size: 1.5rem;
     color: var(--primary-green);
-    margin: 0;
+    margin: 0 0 0.25rem 0;
 }
 
 .category-desc {
     color: var(--text-muted);
-    margin-bottom: 1.5rem;
     font-size: 0.95rem;
+    margin: 0;
+}
+
+.chevron {
+    font-size: 1.2rem;
+    color: var(--primary-green);
+    transition: transform 0.3s;
+    flex-shrink: 0;
+}
+
+.category-card.expanded .chevron {
+    transform: rotate(180deg);
 }
 
 /* Procedure List */
+.procedure-list-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
 .procedure-list {
     list-style: none;
+    padding: 1.5rem;
 }
 
 .procedure-list li {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.procedure-list li:last-child {
+    margin-bottom: 0;
 }
 
 .procedure-list a {

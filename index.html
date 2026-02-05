@@ -16,146 +16,176 @@
 
     <main class="container">
         <section class="intro">
-            <p>Welcome to the Greenhouse Winery procedures portal. Select a category below to access standard operating procedures and training documentation.</p>
+            <p>Welcome to the Greenhouse Winery procedures portal. Click any category below to view available procedures.</p>
         </section>
 
         <div class="categories">
             <!-- Festivals -->
             <div class="category-card">
-                <div class="category-header">
+                <button class="category-toggle" onclick="toggleCategory(this)">
                     <span class="icon">🎪</span>
-                    <h2>Festivals</h2>
+                    <div class="category-info">
+                        <h2>Festivals</h2>
+                        <p class="category-desc">Wine festival operations, permits, and event procedures</p>
+                    </div>
+                    <span class="chevron">▼</span>
+                </button>
+                <div class="procedure-list-container">
+                    <ul class="procedure-list">
+                        <li>
+                            <a href="procedures/Festivals/001 - Acquiring a PLCB Exposition Permit.pdf" target="_blank">
+                                <span class="doc-number">FES-001</span>
+                                <span class="doc-title">Acquiring PLCB Exposition Permit</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="procedures/Festivals/Wine Festival Operations Overview.pdf" target="_blank">
+                                <span class="doc-number">FES-002</span>
+                                <span class="doc-title">Wine Festival Operations Overview</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <p class="category-desc">Wine festival operations, permits, and event procedures</p>
-                <ul class="procedure-list">
-                    <li>
-                        <a href="procedures/Festivals/001 - Acquiring a PLCB Exposition Permit.docx" download>
-                            <span class="doc-number">FES-001</span>
-                            <span class="doc-title">Acquiring PLCB Exposition Permit</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="procedures/Festivals/Wine Festival Operations Overview.docx" download>
-                            <span class="doc-number">FES-002</span>
-                            <span class="doc-title">Wine Festival Operations Overview</span>
-                        </a>
-                    </li>
-                </ul>
             </div>
 
             <!-- Store Procedures -->
             <div class="category-card">
-                <div class="category-header">
+                <button class="category-toggle" onclick="toggleCategory(this)">
                     <span class="icon">🏪</span>
-                    <h2>Store Procedures</h2>
+                    <div class="category-info">
+                        <h2>Store Procedures</h2>
+                        <p class="category-desc">Daily operations for opening, closing, and maintenance</p>
+                    </div>
+                    <span class="chevron">▼</span>
+                </button>
+                <div class="procedure-list-container">
+                    <ul class="procedure-list">
+                        <li>
+                            <a href="procedures/Store Procedures/Cleaning the Slushie Machine at Westmoreland and Jacktown.pdf" target="_blank">
+                                <span class="doc-number">STO-001</span>
+                                <span class="doc-title">Cleaning Slushie Machine (Westmoreland & Jacktown)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="procedures/Store Procedures/Cleaning the Slushie Machine at the Main Winery.pdf" target="_blank">
+                                <span class="doc-number">STO-002</span>
+                                <span class="doc-title">Cleaning Slushie Machine (Main Winery)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="procedures/Store Procedures/Closing the Main Winery.pdf" target="_blank">
+                                <span class="doc-number">STO-003</span>
+                                <span class="doc-title">Closing the Main Winery</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="procedures/Store Procedures/Opening the Main Winery.pdf" target="_blank">
+                                <span class="doc-number">STO-004</span>
+                                <span class="doc-title">Opening the Main Winery</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <p class="category-desc">Daily operations for opening, closing, and maintenance</p>
-                <ul class="procedure-list">
-                    <li>
-                        <a href="procedures/Store Procedures/Cleaning the Slushie Machine at Westmoreland and Jacktown.docx" download>
-                            <span class="doc-number">STO-001</span>
-                            <span class="doc-title">Cleaning Slushie Machine (Westmoreland & Jacktown)</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="procedures/Store Procedures/Cleaning the Slushie Machine at the Main Winery.docx" download>
-                            <span class="doc-number">STO-002</span>
-                            <span class="doc-title">Cleaning Slushie Machine (Main Winery)</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="procedures/Store Procedures/Closing the Main Winery.docx" download>
-                            <span class="doc-number">STO-003</span>
-                            <span class="doc-title">Closing the Main Winery</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="procedures/Store Procedures/Opening the Main Winery.docx" download>
-                            <span class="doc-number">STO-004</span>
-                            <span class="doc-title">Opening the Main Winery</span>
-                        </a>
-                    </li>
-                </ul>
             </div>
 
             <!-- Supplies and Ordering -->
             <div class="category-card">
-                <div class="category-header">
+                <button class="category-toggle" onclick="toggleCategory(this)">
                     <span class="icon">📦</span>
-                    <h2>Supplies & Ordering</h2>
+                    <div class="category-info">
+                        <h2>Supplies & Ordering</h2>
+                        <p class="category-desc">Inventory management and ordering procedures</p>
+                    </div>
+                    <span class="chevron">▼</span>
+                </button>
+                <div class="procedure-list-container">
+                    <ul class="procedure-list">
+                        <li>
+                            <a href="procedures/Supplies and Ordering/Ordering Supplies and Wine for the Stores.pdf" target="_blank">
+                                <span class="doc-number">SUP-001</span>
+                                <span class="doc-title">Ordering Supplies and Wine for the Stores</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <p class="category-desc">Inventory management and ordering procedures</p>
-                <ul class="procedure-list">
-                    <li>
-                        <a href="procedures/Supplies and Ordering/Ordering Supplies and Wine for the Stores.docx" download>
-                            <span class="doc-number">SUP-001</span>
-                            <span class="doc-title">Ordering Supplies and Wine for the Stores</span>
-                        </a>
-                    </li>
-                </ul>
             </div>
 
             <!-- Training -->
             <div class="category-card">
-                <div class="category-header">
+                <button class="category-toggle" onclick="toggleCategory(this)">
                     <span class="icon">📚</span>
-                    <h2>Training</h2>
+                    <div class="category-info">
+                        <h2>Training</h2>
+                        <p class="category-desc">Employee training materials and guidelines</p>
+                    </div>
+                    <span class="chevron">▼</span>
+                </button>
+                <div class="procedure-list-container">
+                    <ul class="procedure-list">
+                        <li>
+                            <a href="procedures/Training/Employee Training - Sampling and Our Wines.pdf" target="_blank">
+                                <span class="doc-number">TRA-001</span>
+                                <span class="doc-title">Employee Training - Sampling and Our Wines</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <p class="category-desc">Employee training materials and guidelines</p>
-                <ul class="procedure-list">
-                    <li>
-                        <a href="procedures/Training/Employee Training - Sampling and Our Wines.docx" download>
-                            <span class="doc-number">TRA-001</span>
-                            <span class="doc-title">Employee Training - Sampling and Our Wines</span>
-                        </a>
-                    </li>
-                </ul>
             </div>
 
             <!-- Website and Social Media -->
             <div class="category-card">
-                <div class="category-header">
+                <button class="category-toggle" onclick="toggleCategory(this)">
                     <span class="icon">📱</span>
-                    <h2>Website & Social Media</h2>
+                    <div class="category-info">
+                        <h2>Website & Social Media</h2>
+                        <p class="category-desc">Marketing and digital presence procedures</p>
+                    </div>
+                    <span class="chevron">▼</span>
+                </button>
+                <div class="procedure-list-container">
+                    <ul class="procedure-list">
+                        <li>
+                            <a href="procedures/Website and Social Media/Creating an Event on Facebook.pdf" target="_blank">
+                                <span class="doc-number">MAR-001</span>
+                                <span class="doc-title">Creating an Event on Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="procedures/Website and Social Media/Creating an Event on the Wix Website.pdf" target="_blank">
+                                <span class="doc-number">MAR-002</span>
+                                <span class="doc-title">Creating an Event on the Wix Website</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <p class="category-desc">Marketing and digital presence procedures</p>
-                <ul class="procedure-list">
-                    <li>
-                        <a href="procedures/Website and Social Media/Creating an Event on Facebook.docx" download>
-                            <span class="doc-number">MAR-001</span>
-                            <span class="doc-title">Creating an Event on Facebook</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="procedures/Website and Social Media/Creating an Event on the Wix Website.docx" download>
-                            <span class="doc-number">MAR-002</span>
-                            <span class="doc-title">Creating an Event on the Wix Website</span>
-                        </a>
-                    </li>
-                </ul>
             </div>
 
             <!-- Wholesale -->
             <div class="category-card">
-                <div class="category-header">
+                <button class="category-toggle" onclick="toggleCategory(this)">
                     <span class="icon">🚚</span>
-                    <h2>Wholesale</h2>
+                    <div class="category-info">
+                        <h2>Wholesale</h2>
+                        <p class="category-desc">Wholesale operations and pricing</p>
+                    </div>
+                    <span class="chevron">▼</span>
+                </button>
+                <div class="procedure-list-container">
+                    <ul class="procedure-list">
+                        <li>
+                            <a href="procedures/Wholesale/Greenhouse Wholesale Process.pdf" target="_blank">
+                                <span class="doc-number">WHO-001</span>
+                                <span class="doc-title">Greenhouse Wholesale Process</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="procedures/Wholesale/Greenhouse Winery Wholesale Price List.pdf" target="_blank">
+                                <span class="doc-number">WHO-002</span>
+                                <span class="doc-title">Wholesale Price List</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <p class="category-desc">Wholesale operations and pricing</p>
-                <ul class="procedure-list">
-                    <li>
-                        <a href="procedures/Wholesale/Greenhouse Wholesale Process.docx" download>
-                            <span class="doc-number">WHO-001</span>
-                            <span class="doc-title">Greenhouse Wholesale Process</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="procedures/Wholesale/Greenhouse Winery Wholesale Price List.docx" download>
-                            <span class="doc-number">WHO-002</span>
-                            <span class="doc-title">Wholesale Price List</span>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </div>
     </main>
@@ -166,5 +196,23 @@
             <p class="last-updated">Last Updated: February 5, 2026</p>
         </div>
     </footer>
+
+    <script>
+        function toggleCategory(button) {
+            const card = button.parentElement;
+            const listContainer = card.querySelector('.procedure-list-container');
+            const chevron = button.querySelector('.chevron');
+            
+            card.classList.toggle('expanded');
+            
+            if (card.classList.contains('expanded')) {
+                listContainer.style.maxHeight = listContainer.scrollHeight + 'px';
+                chevron.textContent = '▲';
+            } else {
+                listContainer.style.maxHeight = '0';
+                chevron.textContent = '▼';
+            }
+        }
+    </script>
 </body>
 </html>
